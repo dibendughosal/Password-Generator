@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Password Generator | Dibendu </title>
-    <link rel="shortcut icon" href="./assets/reset-password (1).png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <title>Password Generator | Dibendu</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/reset-password (1).png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h2>Password Generator - Dib's Codez</h2>
+      <h2>Password Generator</h2>
       <div class="display-container">
         <input
           placeholder="Password"
@@ -17,37 +21,50 @@
           data-passwordDisplay
           readonly
         />
-        <button>
-          <span data-copyMsg>Copied</span>
-          <img src="./assets/copy.svg" alt="Copy icon" data-copy />
+        <button class="copyBtn">
+          <span data-copyMsg class="copyTxt"></span>
+          <img
+            src="./assets/copy.svg"
+            alt="Copy icon"
+            width="30px"
+            height="30px"
+            data-copy
+          />
         </button>
       </div>
       <div class="input-container">
         <div class="length-container">
-          <h3>Password Length</h3>
+          <p>Password Length</p>
           <p data-length>0</p>
         </div>
-        <input type="range" name="" id="" min="1" max="20" length-slider/>
-        <div>
+        <input
+          type="range"
+          name=""
+          class="slider"
+          min="1"
+          max="20"
+          length-slider
+        />
+        <div class="check">
           <input type="checkbox" id="uppercase" />
           <label for="uppercase">Include Uppercase Letters</label>
         </div>
-        <div>
+        <div class="check">
           <input type="checkbox" id="lowercase" />
           <label for="lowercase">Include Lowercase Letters</label>
         </div>
-        <div>
-          <input type="checkbox"  id="numbers" />
+        <div class="check">
+          <input type="checkbox" id="numbers" />
           <label for="numbers">Include Numbers</label>
         </div>
-        <div>
-          <input type="checkbox" id="symbols"/>
+        <div class="check">
+          <input type="checkbox" id="symbols" />
           <label for="symbols">Include Symbols</label>
         </div>
         <!-- strength section -->
         <div class="strength-section">
-          <h3>Strength</h3>
-          <div data-indicator></div>
+          <p>Strength</p>
+          <div class="indicator" data-indicator></div>
         </div>
         <!-- generated Password button -->
         <button class="generatedBtn">Genarate Password</button>
